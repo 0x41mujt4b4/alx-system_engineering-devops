@@ -1,2 +1,2 @@
 #!/bin/bash
-rsync -a --ignore-existing --include="*.html" --exclude="*" ./ ../
+cp -u --no-clobber *.html ..
