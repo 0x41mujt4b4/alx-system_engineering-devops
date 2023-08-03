@@ -1,0 +1,3 @@
+#!/bin/bash
+chown vincent _hello --no-dereference
+chgrp staff _hello --no-dereference
