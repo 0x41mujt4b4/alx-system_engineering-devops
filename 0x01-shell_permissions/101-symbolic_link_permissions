@@ -1,3 +1,2 @@
 #!/bin/bash
-chown vincent _hello --no-dereference
-chgrp staff _hello --no-dereference
+chown vincent:staff _hello --no-dereference
