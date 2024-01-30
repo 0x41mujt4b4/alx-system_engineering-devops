@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_school(input)
-  match = input.scan(/hbt{1,4}n/)
+  match = input.scan(/hbt+n/)
   if match
     puts "#{match.join("")}"
   end
