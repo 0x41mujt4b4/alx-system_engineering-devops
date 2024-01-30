@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-#
+
 def match_school(input)
   match = input.scan(/School/)
   if match
