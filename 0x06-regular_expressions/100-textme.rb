@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 def match_school(input)
-  match = input.scan(/\[from:(\d+)\].*\[to:(\d+)\].*\[flags:([^\]]+)\]/)
+  match = input.scan(/(?<=from:|to:|flags:).+?(?=\])/)
   if match
     puts "#{match.join(",")}"
   end
