@@ -8,6 +8,7 @@ import csv
 
 
 def main():
+    """the main function of the module"""
     to_csv = []
     id = ''
     try:
@@ -27,7 +28,7 @@ def main():
     NUMBER_OF_DONE_TASKS = 0
     TOTAL_NUMBER_OF_TASKS = 0
     for task in todo_data:
-        if task['userId'] == id:
+        if task.get('userId') == id:
             TOTAL_NUMBER_OF_TASKS += 1
             row = [str(id), user_data.get('username'),
                    str(task.get('completed')), task.get('title')]
