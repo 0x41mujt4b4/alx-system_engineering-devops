@@ -34,7 +34,7 @@ def main():
                    str(task.get('completed')), task.get('title')]
             to_csv.append(row)
     with open(f'{id}.csv', 'w') as file:
-        write = csv.writer(file)
+        write = csv.writer(file, quotechar='"', quoting=csv.QUOTE_ALL)
         write.writerows(to_csv)
 
 
