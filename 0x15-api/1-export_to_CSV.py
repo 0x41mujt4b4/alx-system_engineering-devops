@@ -29,8 +29,8 @@ def main():
     for task in todo_data:
         if task['userId'] == id:
             TOTAL_NUMBER_OF_TASKS += 1
-            row = [str(id), user_data['username'],
-                   str(task['completed']), task['title']]
+            row = [str(id), user_data.get('username'),
+                   str(task.get('completed')), task.get('title')]
             to_csv.append(row)
     with open(f'{id}.csv', 'w') as file:
         write = csv.writer(file)
