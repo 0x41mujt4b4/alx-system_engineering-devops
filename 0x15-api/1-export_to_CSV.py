@@ -2,9 +2,9 @@
 """
 python module to send api request to todo list api data
 """
+import csv
 import requests
 from sys import argv
-import csv
 
 
 def main():
